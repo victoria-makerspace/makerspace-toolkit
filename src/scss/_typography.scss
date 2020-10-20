@@ -1,0 +1,23 @@
+
+body {
+  font-family: "Work Sans","Raleway","Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  /*font-size: 16px;*/
+  color: get-color(base, 14);
+  padding: 3rem 0;
+}
+
+input, select, textarea {
+  font-family: "Work Sans","Raleway","Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.weak {
+  font-weight: 400;
+}

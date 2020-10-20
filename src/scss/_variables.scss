@@ -1,0 +1,17 @@
+$colors: (
+    base: chromatic-scale(#ffffff, #333333, (stops: 17))
+);
+
+$color-state-broken: rgb(224, 54, 42);
+$color-state-missing: rgb(64, 137, 185);
+$color-state-working: rgb(116, 165, 51);
+$color-state-partial: rgb(243, 158, 0);
+$color-state-wanted: #d66db3;
+$info-foreground: white;
+
+$box-shadow-color: rgba(0, 0, 32, 0.6);
+
+$border-radius-medium: 4px;
+
+$list-column-width: 35rem;
+$list-column-gap: 2rem;

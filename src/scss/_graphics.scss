@@ -1,0 +1,23 @@
+.graphics-fill-foreground {
+  fill: get-color(base, 16);
+}
+
+.graphics-fill-broken {
+  fill: $color-state-broken;
+}
+
+.graphics-fill-partial {
+  fill: $color-state-partial;
+}
+
+.graphics-fill-working {
+  fill: $color-state-working;
+}
+
+.graphics-fill-wanted {
+  fill: $color-state-wanted;
+}
+
+.graphics-fill-missing {
+  fill: $color-state-missing;
+}

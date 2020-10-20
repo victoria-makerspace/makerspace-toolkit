@@ -1,0 +1,74 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // this defines what 1rem is
+  font-size: 62.5%;
+  margin-left: calc(100vw - 100%);
+}
+
+body {
+  box-sizing: border-box;
+  background: get-color(base, 0);
+}
+
+button {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border: 1px solid get-color(base, 8);
+  border-radius: $border-radius-medium;
+  transition: all 0.5s;
+  color: get-color(base, 16);
+  background-color: get-color(base, 0);
+  background-image: chromatic-gradient(to right bottom, chromatic-color-brighten(get-color(base, 0), .25), chromatic-color-darken(get-color(base, 0), .25));
+  display: inline-block;
+  // margin: 2px;
+  outline: 3px solid transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: 3px solid get-color(base, 0);
+    box-shadow: 0 0 0 4px get-color(base, 8);
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.3;
+  }
+
+  & strong {
+    font-weight: 700;
+  }
+}
+
+input, select, textarea {
+  border-radius: $border-radius-medium;
+  padding: .5rem .5rem;
+  outline: none;
+  border: 1px solid get-color(base, 14);
+  background-color: get-color(base, 0);
+  color: get-color(base, 14);  
+
+  &:focus {
+    outline: 2px solid get-color(base, 8);
+    border: 1px solid get-color(base, 14);
+  }
+
+  &::placeholder {
+    font-style: italic;
+    color: get-color(base, 8);
+  }
+
+  &:disabled {
+    opacity: 1;
+    color: get-color(base, 14);
+  }  
+}

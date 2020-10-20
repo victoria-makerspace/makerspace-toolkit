@@ -1,0 +1,32 @@
+@mixin active-toggle ($toggle-color) {
+  color: get-color(base, 0);
+  background-color: $toggle-color;
+  background-image: chromatic-gradient(to right bottom, chromatic-color-brighten($toggle-color, .25), chromatic-color-darken($toggle-color, .25));
+  border: 1px solid $toggle-color;
+}
+
+@mixin inactive-toggle ($toggle-color) {
+  color: $toggle-color;
+  background-image: chromatic-gradient(to right bottom, chromatic-color-brighten(get-color(base, 0), .25), chromatic-color-darken(get-color(base, 0), .25));
+  border: 1px solid $toggle-color;
+}
+
+@mixin list-columns($column-width, $column-gap) {
+  margin: 0 auto;
+  align-content: center;
+  max-width: $column-width;
+
+  @media only screen and (min-width: ($column-width * 2)) {
+    max-width: ($column-width * 2);
+    column-count: 2;
+    column-gap: $column-gap;
+    column-width: ($column-width - ( $column-gap / 2));
+  }
+
+  // hack because safari column support is buggy
+  @media not all and (min-resolution:.001dpcm)
+  { @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    -webkit-column-count: 1;
+    column-count: 1; 
+  }}  
+}

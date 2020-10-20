@@ -1,0 +1,7 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>state</title>
+  <path style="fill: currentColor;" d="M25.41,46.59a2,2,0,0,0-2.82,0L18,51.17V8a2,2,0,0,0-4,0V51.17L9.41,46.59a2,2,0,0,0-2.82,2.82L16,58.83l9.41-9.42A2,2,0,0,0,25.41,46.59Z"/>
+  <rect class="graphics-fill-broken" x="32" y="8" width="26" height="12" rx="2"/>
+  <rect class="graphics-fill-partial" x="32" y="26" width="26" height="12" rx="2"/>
+  <rect class="graphics-fill-working" x="32" y="44" width="26" height="12" rx="2"/>
+</svg>
